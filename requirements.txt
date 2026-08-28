@@ -1,0 +1,38 @@
+# ── Core data ─────────────────────────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.1.0
+duckdb>=0.10.0
+pyarrow>=14.0.0
+
+# ── Feature engineering & stats ───────────────────────────────────────────────
+statsmodels>=0.14.0
+scikit-learn>=1.4.0
+scipy>=1.12.0
+
+# ── Forecasting models ────────────────────────────────────────────────────────
+prophet>=1.1.5
+lightgbm>=4.3.0
+torch>=2.2.0          # MPS-accelerated on Apple Silicon
+shap>=0.44.0
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+dash>=2.16.0
+dash-bootstrap-components>=1.6.0
+plotly>=5.20.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm>=4.66.0
+loguru>=0.7.0
+python-dotenv>=1.0.0
+joblib>=1.3.0
+kaggle>=1.6.0          # for optional API download
+
+# ── Notebooks ─────────────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipywidgets>=8.1.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-cov>=4.1.0

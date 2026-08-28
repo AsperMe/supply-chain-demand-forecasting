@@ -1,0 +1,7 @@
+model,col,n_series,n_rows,RMSE,MAE,SMAPE,WRMSSE
+Lgbm,lgbm_point,30490,853720,2.0866,0.9191,83.2193,0.9999
+Prophet,prophet_point,3617,101276,4.1158,2.5231,65.5121,
+Sarima,sarima_point,2926,81928,3.6189,2.3107,62.5375,
+Lstm,lstm_point,3617,101276,5.1552,2.8034,68.2303,
+Dual,dual_point,26873,752444,1.5799,0.7722,154.3508,1.3748
+Ensemble,ensemble_point,30490,853720,1.9961,0.963,143.8932,0.949

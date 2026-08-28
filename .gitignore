@@ -1,0 +1,39 @@
+# Data files (large)
+data/raw/
+data/processed/
+data/models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.env
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Reports (auto-generated, can be committed if desired)
+# reports/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
