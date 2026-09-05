@@ -1,8 +1,3 @@
-"""
-Dashboard Data Layer — loads and caches data from DuckDB for the dashboard.
-Optimized for dynamic, on-demand querying to prevent high memory usage.
-"""
-
 from __future__ import annotations
 
 import functools

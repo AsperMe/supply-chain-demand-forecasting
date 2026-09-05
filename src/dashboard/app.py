@@ -53,12 +53,12 @@ def _chart_layout() -> dict:
     )
 
 
-def _kpi_card(icon: str, title: str, value: str, delta: str, delta_up: bool, color: str) -> html.Div:
+def _kpi_card(icon: str = "", title: str = "", value: str = "", delta: str = "", delta_up: bool = True, color: str = "blue") -> html.Div:
     delta_class = "kpi-delta-up" if delta_up else "kpi-delta-down"
     delta_symbol = "▲" if delta_up else "▼"
     return html.Div([
         html.Div([
-            html.Span(icon, className="kpi-icon"),
+            html.Span(icon, className="kpi-icon") if icon else None,
             html.P(title, className="kpi-title"),
         ], className="kpi-top"),
         html.H2(value, className="kpi-value"),
@@ -318,21 +318,25 @@ def update_overview_kpis(pathname, cat_filter, store_filter):
     kpis = dl.get_overview_kpis(cat_id=cat_filter, store_id=store_filter)
     
     accuracy_card = _kpi_card(
+        "🎯",
         "Forecast Accuracy",
         f"{kpis['accuracy']}%",
         "1.2%", True, "green"
     )
     sales_card = _kpi_card(
+        "📈",
         "Sales Volume",
         f"{kpis['total_sales']:,}",
         "4.8%", True, "blue"
     )
     stockout_card = _kpi_card(
+        "⚠️",
         "Stockout Risk SKUs",
         str(kpis["stockout_alerts"]),
         "3 items", False, "red"
     )
     revenue_card = _kpi_card(
+        "💰",
         "Revenue at Risk",
         f"${kpis['revenue_at_risk']:,}",
         "$450", False, "amber"
